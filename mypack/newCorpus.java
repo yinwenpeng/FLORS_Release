@@ -682,7 +682,8 @@ public class newCorpus extends Dataset{
 				//if (ignoreCapitalization)
 				currentSentence.convertToLowerCase();
 				//update the bigram
-				updateBigram(currentSentence);
+				//updateBigram(currentSentence);
+				updateBigram_weakenTarget(currentSentence);
 				//compute the feature
 				
 				for(int i=0;i<currentSentence.size();i++)
